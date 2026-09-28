@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --bg-900: #070a10;
+  --bg-800: #0d1320;
+  --bg-700: #141d2d;
+  --panel: rgba(13, 18, 28, 0.88);
+  --panel-strong: rgba(16, 22, 31, 0.96);
+  --gold: #ffb454;
+  --orange: #ff7b54;
+  --text: #edf2ff;
+  --muted: #d6def0;
+  --line: rgba(255, 255, 255, 0.08);
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text);
+  background: var(--bg-900);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  position: relative;
+  background:
+    radial-gradient(circle at top, rgba(255, 123, 84, 0.18), transparent 22%),
+    radial-gradient(circle at right, rgba(255, 180, 84, 0.12), transparent 18%),
+    linear-gradient(180deg, var(--bg-900) 0%, var(--bg-800) 100%);
+  color: var(--text);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(rgba(255,255,255,0.02), rgba(255,255,255,0));
+  pointer-events: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+.brand {
+  font-family: 'Bebas Neue', 'Arial Narrow', sans-serif;
+  letter-spacing: 0.04em;
+}
+
+button,
+input,
+select {
+  border: none;
+  outline: none;
+}
